@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELNOVAR — Official</title>
+  <meta name="description" content="ELNOVAR — official website of the band.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:#070707;color:#f2f2f2;line-height:1.5;
+      overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    .nav{
+      position:fixed;top:0;left:0;right:0;z-index:20;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:18px 6%;
+      background:rgba(7,7,7,.72);backdrop-filter:blur(12px);
+      border-bottom:1px solid #1d1d1d;
+    }
+    .brand{font-size:20px;letter-spacing:.35em;font-weight:700}
+    .navlinks{display:flex;gap:28px;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+    .navlinks a{opacity:.72;transition:.2s}
+    .navlinks a:hover{opacity:1}
+    .hero{
+      min-height:100vh;display:grid;place-items:center;text-align:center;
+      padding:120px 6% 80px;
+      background:
+        radial-gradient(circle at 50% 42%,#242424 0,#0d0d0d 27%,#070707 62%);
+      position:relative;
+    }
+    .hero:after{
+      content:"";position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(transparent 70%,#070707);
+    }
+    .hero-content{position:relative;z-index:1;max-width:900px}
+    .logo{width:min(300px,65vw);height:auto;filter:grayscale(1) contrast(1.08);margin-bottom:18px}
+    .eyebrow{font-size:11px;letter-spacing:.45em;text-transform:uppercase;color:#999;margin-bottom:18px}
+    h1{font-size:clamp(56px,12vw,150px);letter-spacing:.12em;font-weight:300;line-height:.9}
+    .tag{margin-top:22px;color:#9c9c9c;letter-spacing:.32em;text-transform:uppercase;font-size:11px}
+    .cta{margin-top:34px;display:inline-block;border:1px solid #777;padding:13px 24px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;transition:.25s}
+    .cta:hover{background:#f2f2f2;color:#070707}
+    section{padding:110px 8%;border-top:1px solid #191919}
+    .section-title{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#888;margin-bottom:40px}
+    .about{max-width:850px;font-size:clamp(24px,3.2vw,44px);font-weight:300;line-height:1.25}
+    .about span{color:#777}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{min-height:230px;border:1px solid #242424;padding:28px;background:#0b0b0b;display:flex;flex-direction:column;justify-content:space-between}
+    .card .num{font-size:11px;color:#666;letter-spacing:.2em}
+    .card h3{font-size:28px;font-weight:400;letter-spacing:.04em}
+    .card p{color:#888;font-size:13px}
+    .members{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+    .member{aspect-ratio:1/1;background:linear-gradient(145deg,#171717,#090909);border:1px solid #222;display:flex;align-items:end;padding:18px}
+    .member b{font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+    .contact{text-align:center;padding-bottom:130px}
+    .contact h2{font-size:clamp(40px,7vw,90px);font-weight:300;letter-spacing:.04em}
+    .contact p{color:#888;margin:18px 0 28px}
+    footer{padding:25px 6%;border-top:1px solid #1d1d1d;color:#555;font-size:10px;letter-spacing:.18em;text-transform:uppercase;display:flex;justify-content:space-between}
+    @media(max-width:760px){
+      .navlinks{display:none}
+      .cards{grid-template-columns:1fr}
+      .members{grid-template-columns:repeat(2,1fr)}
+      section{padding:80px 6%}
+      footer{flex-direction:column;gap:8px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="#home">ELNOVAR</a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#members">Members</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">Official band</div>
+        <img class="logo" src="elnovar-logo.png" alt="ELNOVAR logo">
+        <h1>ELNOVAR</h1>
+        <div class="tag">Beyond the noise.</div>
+        <a class="cta" href="#music">Enter the sound</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title">01 — About</div>
+      <p class="about">
+        Five voices. One identity. <span>ELNOVAR is built for the stage — raw energy,
+        atmosphere, and music that stays with you after the lights go down.</span>
+      </p>
+    </section>
+
+    <section id="music">
+      <div class="section-title">02 — Music</div>
+      <div class="cards">
+        <article class="card">
+          <div class="num">01 / SINGLE</div>
+          <h3>COMING SOON</h3>
+          <p>First release — announcement coming soon.</p>
+        </article>
+        <article class="card">
+          <div class="num">02 / LIVE</div>
+          <h3>ON STAGE</h3>
+          <p>Live performances, school events and future shows.</p>
+        </article>
+        <article class="card">
+          <div class="num">03 / NEXT</div>
+          <h3>NEW ERA</h3>
+          <p>New sound. New chapter. Same name.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="members">
+      <div class="section-title">03 — The Band</div>
+      <div class="members">
+        <div class="member"><b>Member 01</b></div>
+        <div class="member"><b>Member 02</b></div>
+        <div class="member"><b>Member 03</b></div>
+        <div class="member"><b>Member 04</b></div>
+        <div class="member"><b>Member 05</b></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title">04 — Contact</div>
+      <h2>SEE YOU<br>ON STAGE.</h2>
+      <p>For performances, collaborations and enquiries.</p>
+      <p style="color:#f2f2f2;letter-spacing:.08em;font-size:14px;">OPERATOR — wapanggaming@gmail.com</p>
+      <a class="cta" href="mailto:wapanggaming@gmail.com">Contact Operator</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 ELNOVAR</span>
+    <span>Beyond the noise.</span>
+  </footer>
+</body>
+</html>
